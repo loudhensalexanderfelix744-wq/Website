@@ -1,0 +1,146 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6;  }
+
+/* Navbar */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: #333; color: #fff; }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin: 0 1rem; }
+.nav-links a { color: #fff; text-decoration: none; }
+.toggle { display: none; cursor: pointer; }
+
+/* Hero */
+.hero { background: url('images/menu.jpeg') center/cover no-repeat; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; text-align: center; }
+.hero .btn { background: #e63946; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+
+/* Menu */
+.menu { padding: 2rem; text-align: center; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+.menu-item img { width: 100%; border-radius: 10px; }
+
+
+
+.gallery-slider {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.gallery-slider h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.swiper {
+  width: 70%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+
+ @keyframes slide {
+  0%,20%   { transform: translateX(0%); }
+  25%,45%  { transform: translateX(-100%); }
+  50%,70%  { transform: translateX(-200%); }
+  75%,95%  { transform: translateX(-300%); }
+  100%     { transform: translateX(0%); }
+}
+
+
+.swiper-slide img:hover {
+  transform: scale(1.02);
+}
+
+/* Pagination minimaliste */
+.swiper-pagination-bullet {
+  background: #666;
+  opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #b22222; /* rouge bordeaux */
+  opacity: 1;
+}
+
+/* About */
+.about { padding: 2rem; background: #f4f4f4; text-align: center; }
+
+/* Contact */
+.contact { padding: 2rem; text-align: center; }
+.contact form { display: flex; flex-direction: column; max-width: 400px; margin: auto; }
+.contact input, .contact textarea { margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+.contact button { background: #333; color: #fff; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+
+/* Bouton Réservation */
+.btn-reserve {
+  display: inline-block;
+  margin-top: 15px;
+  background: #e63946;
+  color: #fff;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btn-reserve:hover { background: #d62828; }
+
+.menu-section {
+  background-image: url('images/bg-menu.jpg'); /* remplace par ton image */
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.menu-button {
+  background-color: #b22222;
+  color: #fff;
+  font-size: 1.8em;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Effet au survol */
+.menu-button:hover {
+  background-color: #8b1a1a;
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+
+/* Carte */
+.map-container {
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Footer */
+footer { background: #333; color: #fff; text-align: center; padding: 1rem; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links { display: none; flex-direction: column; }
+  .nav-links.active { display: flex; }
+  .toggle { display: block; }
+}
+

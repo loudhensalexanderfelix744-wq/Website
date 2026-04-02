@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation - Restaurant Haïtien</title>
+  <link rel="stylesheet" href="style_reservation.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1>Réservez votre table</h1>
+  </header>
+
+  <main class="reservation-page">
+    <form action="process_reservation.php" method="POST" class="reservation-form">
+      <label>Nom</label>
+      <input type="text" placeholder="Votre nom" required>
+
+      <label>Email</label>
+      <input type="email" placeholder="Votre email" required>
+
+      <label>Téléphone</label>
+      <input type="tel" placeholder="Votre numéro" required>
+
+      <label>Date</label>
+      <input type="date" required>
+
+      <label>Heure</label>
+      <input type="time" required>
+
+      <label>Quantite</label>
+      <input type="number" min="1" max="20" required>
+
+      <button type="submit" class="reserve-button">Confirmer la réservation</button>
+    </form>
+  </main>
+
+</body>
+</html>
