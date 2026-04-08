@@ -9,7 +9,7 @@ body { font-family: Arial, sans-serif; line-height: 1.6;  }
 .toggle { display: none; cursor: pointer; }
 
 /* Hero */
-.hero { background: url('images/men.jpg') center/cover no-repeat; height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; text-align: center; }
+.hero { background: url('images/menu.jpg') center/cover no-repeat; height: 100px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; text-align: center; }
 
 .hero .btn { background: #e63946; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
 
